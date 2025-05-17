@@ -1,0 +1,25 @@
+{
+  "cli": {
+    "version": ">= 16.6.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "MAPBOX_DOWNLOADS_TOKEN": "Ypk.eyJ1IjoiaGFuaS1kYW91ZDciLCJhIjoiY21ha3JudmcyMDB4YzJqc2w2bnpyeHNlaSJ9.OoE3ZYbLqjrK274IW4ZgDQ"
+      }
+    }
+    
+  },
+  "submit": {
+    "production": {}
+  }
+}
