@@ -1,52 +1,33 @@
 {
   "expo": {
-    "name": "fastnow",
+    "name": "FastNow",
     "slug": "fastnow",
-    "scheme": "fastnow",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "bundleIdentifier": "com.fastnow",
-      "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "This app needs access to your location.",
-        "ITSAppUsesNonExemptEncryption": false
-      },
       "supportsTablet": true
     },
     "android": {
-      "package": "com.fastnow",
-      "permissions": [
-        "ACCESS_FINE_LOCATION"
-      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyCxyZ0WERUjdLioje7mPNWEtwdBD5NoKQo"
-        }
-      }
+      "package": "com.haniidaoud.fastnow"
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "b7838fa2-0775-4d05-83bd-e4afdf5d447b"
-      }
-    },
-    "plugins": [
-      "expo-font"
-    ]
+      "favicon": "./assets/favicon.png"
+    }
   }
 }
